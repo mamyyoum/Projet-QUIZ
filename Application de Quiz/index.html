@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Application de Quiz</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <!--Un conteneur d'arrière-plan 
+    où votre texte et vos boutons seront visibles-->
+    <div class="container">
+    <!--Un conteneur div pour stocker le score.-->
+        <div class="score">
+            <span id="user-score">0</span>
+        <span> / </span>
+            <span id="total-score">0</span>
+        </div>
+        <!--Un conteneur div pour afficher la question-->
+        <div class="content" id="question-area">
+            <div id="question-text"></div>
+            <!--Un conteneur div qui contient les choix que vous souhaitez proposer 
+            à l'utilisateur pour sélectionner une réponse à la question-->
+            <div class="options">
+                <button class="btn btn-option" id="True">Vrai</button>
+                <button class="btn btn-option" id="False">Faux</button>
+            </div>
+        </div>
+       <!--Un conteneur div qui contient tous les boutons de contrôle :
+         Restart, Prev, Next et Submit.-->
+        <div class="controls">
+            <button class="btn btn-restart" id="restart">Redemarer</button>
+            <button class="btn btn-prev" id="prev">Precedant</button>
+            <button class="btn btn-next" id="next">Suivant</button>
+            <button class="btn btn-submit" id="submit">Envoyer</button>
+        </div>
+    </div>
+   <script src="quiz.js"></script>
+</body>
+</html>
